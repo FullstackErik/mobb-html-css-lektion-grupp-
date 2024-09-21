@@ -69,4 +69,5 @@ a {
 }
 a:hover {
     background-color: rgb(204, 201, 50);
+    color: black;
 }
