@@ -5,6 +5,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   background-repeat: no-repeat;
   background-size: 120% 120%;
+  color: white;
 }
 
 header {
@@ -27,7 +28,6 @@ header {
 .korvfest {
   text-align: center;
   background-color: 44, 44, 44;
-  color: white;
   /* margin-left: 30%; */
   width: 65%;
   padding: 10px;
@@ -53,7 +53,6 @@ header {
 
 footer {
   text-align: center;
-  color: white;
   border-top: 4px solid rgb(66, 66, 66);
   height: 100px;
 }
@@ -76,4 +75,26 @@ li {
 
 ul {
     margin: 0;
+}
+
+@keyframes textcolor {
+  from {color: yellow;}
+  to {color: red;}
+}
+
+.text {
+  animation-name: textcolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.text2 {
+  animation-name: textcolor2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textcolor2 {
+  from {color: red;}
+  to {color: yellow;}
 }
