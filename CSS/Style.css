@@ -1,62 +1,97 @@
 body {
-    padding: 0px;
-    
-    border: solid 0px black;
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-   background-repeat:no-repeat;
-   background-size: 120% 120%;
+  padding: 0px;
+  border: solid 0px black;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-repeat: no-repeat;
+  background-size: 120% 120%;
+  color: white;
 }
 
 header {
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom: 1px solid;
-    background-color:white;
-    height: 100px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 4px solid rgb(66, 66, 66);
+  height: 100px;
 }
 .container {
-    border: solid 1px black;
-    border-radius: 12px;
-    margin: 5% 20%;
-    background-color: white;
-    
+  border: solid 8px rgb(66, 66, 66);
+  border-radius: 12px;
+  margin: 5% 20%;
+  background-color: rgb(34, 34, 34);
 }
-.korvfest{
-    text-align: center;
-    background-color: white;
-    /* margin-left: 30%; */
-    width: 65%;
-    padding: 10px;
-    position: relative;
-    left: 30%;
-    border-left: 1px black solid;
-
+.korvfest {
+  text-align: center;
+  /* margin-left: 30%; */
+  width: 65%;
+  padding: 10px;
+  position: relative;
+  left: 30%;
+  border-left: 4px solid rgb(66, 66, 66);
 }
 
-.listdiv{
-   background-color: white;
-   width: 25%;
-   margin: 0px;
-/* display: inline-block;  */
-position: absolute;
-padding-top: 40px;
-padding-bottom: 40px;
-
-
- 
+.listdiv {
+  width: 25%;
+  margin: 0px;
+  /* display: inline-block;  */
+  position: absolute;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.listdiv li{
-  list-style-type:none;  
+.listdiv li {
+  list-style-type: none;
   line-height: 40px;
 }
 
-footer{
-    text-align: center;
-    border-top: 1px solid black;
-    height: 100px;
+footer {
+  text-align: center;
+  border-top: 4px solid rgb(66, 66, 66);
+  height: 100px;
+}
+
+a {
+  color: white;
+  /* border: 1px solid rgb(255, 255, 255); */
+  padding: 10px;
+  text-decoration: none;
+  margin: 5px;
+}
+a:hover {
+  background-color: rgb(204, 201, 50);
+  color: black;
+}
+
+li {
+    margin: 4px;
+}
+
+ul {
+    margin: 0;
+}
+
+@keyframes textcolor {
+  from {color: yellow;}
+  to {color: red;}
+}
+
+.text {
+  animation-name: textcolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.text2 {
+  animation-name: textcolor2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes textcolor2 {
+  from {color: red;}
+  to {color: yellow;}
 }
